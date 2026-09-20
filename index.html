@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>屋号未定 - 個人開発者プロフィール</title>
+  <meta name="description" content="個人でスマートフォン向けアプリの開発・公開を行っています。開発中・公開中のアプリ一覧と連絡先情報を掲載しています。">
+
+  <!-- Google Search Console 所有権確認用メタタグ (発行され次第、以下に追記してください) -->
+  <!-- <meta name="google-site-verification" content="ここに発行されたコードを貼り付け" /> -->
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #5a5a5a;
+      --accent: #2b6cb0;
+      --border: #e2e2e2;
+      --card-bg: #f7f7f8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14161a;
+        --fg: #eaeaea;
+        --muted: #a0a0a0;
+        --accent: #6fa8dc;
+        --border: #2a2d33;
+        --card-bg: #1c1f24;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.7;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin: 0 0 8px;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+    .apps {
+      display: grid;
+      gap: 12px;
+    }
+    .app-card {
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .app-card .name {
+      font-weight: 600;
+    }
+    .app-card .links a {
+      color: var(--accent);
+      font-size: 0.85rem;
+      margin-left: 12px;
+      white-space: nowrap;
+    }
+    .app-card .links a:first-child {
+      margin-left: 0;
+    }
+    .contact a {
+      color: var(--accent);
+    }
+    footer {
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>屋号未定(準備中)</h1>
+      <p class="subtitle">個人開発者 / Individual App Developer</p>
+    </header>
+
+    <section id="about">
+      <h2>プロフィール</h2>
+      <p>
+        個人でスマートフォン向けアプリの開発・公開を行っています。
+        日々の記録や習慣化をサポートするアプリを中心に開発しています。
+      </p>
+    </section>
+
+    <section id="apps">
+      <h2>開発中・公開中のアプリ</h2>
+      <div class="apps">
+        <div class="app-card">
+          <div class="name">ぺっときろく</div>
+          <div class="links">
+            <a href="./pet-health-management/privacy-policy.html">プライバシーポリシー</a>
+            <a href="./pet-health-management/release-notes.html">リリースノート</a>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="name">モノサシ</div>
+          <div class="links">
+            <a href="./monosashi/privacy-policy.html">プライバシーポリシー</a>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="name">血圧メモ</div>
+          <div class="links">
+            <a href="./blood-pressure-history/privacy-policy.html">プライバシーポリシー</a>
+            <a href="./blood-pressure-history/release-notes.html">リリースノート</a>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="name">スタミナ手帳</div>
+          <div class="links">
+            <a href="./sutamina-techo/privacy-policy.html">プライバシーポリシー</a>
+            <a href="./sutamina-techo/release-notes.html">リリースノート</a>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="name">ゆびさすコンパス</div>
+          <div class="links">
+            <a href="./houkaku-compass/privacy-policy.html">プライバシーポリシー</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>お問い合わせ</h2>
+      <p>連絡先は準備中です。決まり次第こちらに掲載します。</p>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> 屋号未定
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
