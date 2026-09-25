@@ -19,7 +19,7 @@
 <body>
 
 <h1>プライバシーポリシー(ゆびさすコンパス)</h1>
-<p class="updated">最終更新日: 2026年9月20日</p>
+<p class="updated">最終更新日: 2026年9月25日</p>
 
 <p>「ゆびさすコンパス」(以下「本アプリ」)は、開発者(以下「当方」)が提供するiOS/Android向けアプリです。本ポリシーは、本アプリが取得する情報とその取り扱いについて説明します。</p>
 
@@ -27,6 +27,7 @@
 <ul>
   <li>本アプリは、現在地から目的地への方位・距離を計算するために、端末の位置情報(GPS等)へのアクセスを利用します。</li>
   <li>取得した位置情報は方位・距離の計算にその場で使用されるのみで、<strong>端末内に保存されることも、当方のサーバーへ送信されることもありません。</strong></li>
+  <li>初回起動時などに、この現在地の緯度経度が「自分の国」の判定を補正する目的で OpenStreetMap の Nominatim サービスへ送信される場合があります。詳細は「4. 位置情報・住所とOpenStreetMap Nominatim」をご確認ください。</li>
 </ul>
 
 <h2>2. 登録した場所のデータ(呼び名・住所・座標・種類・コンパス針の画像等)</h2>
@@ -42,9 +43,10 @@
   <li>通知機能の利用には、端末側での通知許可が必要です。許可しない場合でも、通知機能以外の機能は通常どおりご利用いただけます。</li>
 </ul>
 
-<h2>4. 住所検索(OpenStreetMap Nominatim)</h2>
+<h2>4. 位置情報・住所とOpenStreetMap Nominatim</h2>
 <ul>
   <li>場所を登録する際に入力した住所・地名の文字列は、緯度経度に変換するために OpenStreetMap の Nominatim ジオコーディングサービスへ送信されます。</li>
+  <li>上記「1. 位置情報(現在地)」のとおり、現在地の緯度経度も、その地点が属する国を判定するために同じ Nominatim サービスへ送信される場合があります(逆ジオコーディング)。</li>
   <li>OpenStreetMapによる情報の取り扱いについては、<a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OpenStreetMap Foundation のプライバシーポリシー</a>をご確認ください。</li>
 </ul>
 
@@ -80,7 +82,7 @@
 <hr class="lang-divider">
 
 <h1>Privacy Policy (Yubisasu Compass)</h1>
-<p class="updated">Last updated: September 13, 2026</p>
+<p class="updated">Last updated: September 25, 2026</p>
 
 <p>"Yubisasu Compass" ("the App") is provided for iOS/Android by the developer ("we", "us"). This policy explains what information the App collects and how it is handled.</p>
 
@@ -88,13 +90,14 @@
 <ul>
   <li>The App uses your device's location (GPS, etc.) to calculate the bearing and distance from your current position to a destination.</li>
   <li>Location data is used only in the moment to perform that calculation — it is <strong>never stored on the device or sent to our servers.</strong></li>
+  <li>On first launch and similar occasions, your current coordinates may be sent to OpenStreetMap's Nominatim service to refine which country is detected as your home country. See "4. Location, address search, and OpenStreetMap Nominatim" for details.</li>
 </ul>
 
 <h2>2. Registered place data (name, address, coordinates, categories, compass needle images, etc.)</h2>
 <ul>
   <li>All data you register in the App — a place's name, address, coordinates, and categories, your favorites, language/font/theme settings, and any custom compass needle image you set for a place — is stored <strong>only on your device</strong> and is never sent to our servers.</li>
   <li>Uninstalling the App deletes this on-device data.</li>
-  <li>Backup files created with the in-app "Backup" feature (including your registered places and any attached compass needle images) are written only to the location you choose on your own device or storage. They are never uploaded to our servers or any third party. The backup content is encrypted with the password you set.</li>
+  <li>Backup files created with the in-app "Backup" feature (including your registered places and any attached compass needle images) are written only to the location you choose on your own device or storage. They are never uploaded to our servers or any third party. Your registered-place data (name, address, coordinates, etc.) is encrypted with the password you set; any attached compass needle images are saved as plain, unencrypted files in the same folder.</li>
 </ul>
 
 <h2>3. Notifications (local device notifications)</h2>
@@ -103,9 +106,10 @@
   <li>Using this feature requires you to grant notification permission on your device. If you don't grant it, every other feature of the App still works normally.</li>
 </ul>
 
-<h2>4. Address search (OpenStreetMap Nominatim)</h2>
+<h2>4. Location, address search, and OpenStreetMap Nominatim</h2>
 <ul>
   <li>When you register a place, the address or place name you type is sent to OpenStreetMap's Nominatim geocoding service to convert it into coordinates.</li>
+  <li>As noted in "1. Location (current position)" above, your current coordinates may also be sent to the same Nominatim service to determine which country they fall within (reverse geocoding).</li>
   <li>See the <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OpenStreetMap Foundation's Privacy Policy</a> for details.</li>
 </ul>
 
