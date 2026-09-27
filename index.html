@@ -44,6 +44,17 @@
     }
     header {
       margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
     }
     h1 {
       font-size: 1.6rem;
@@ -103,8 +114,11 @@
 <body>
   <main>
     <header>
-      <h1>ちゃ開発組</h1>
-      <p class="subtitle">個人開発者 / Individual App Developer</p>
+      <img class="avatar" src="./assets/profile.jpg" alt="ちゃ開発組のマスコット">
+      <div>
+        <h1>ちゃ開発組</h1>
+        <p class="subtitle">個人開発者 / Individual App Developer</p>
+      </div>
     </header>
 
     <section id="about">
