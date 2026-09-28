@@ -8,6 +8,61 @@
   <link rel="icon" href="../favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="stylesheet" href="../assets/site.css">
+  <style>
+    /* 共通のsite.cssは他アプリと共有のため変更せず、このページ専用のスタイルはここに閉じる */
+    .features {
+      text-align: left;
+      max-width: 480px;
+      margin: 0 auto 32px;
+    }
+    .features h2 {
+      font-size: 1rem;
+      text-align: center;
+      border-bottom: none;
+    }
+    .feature-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+    .feature-list .mark {
+      color: var(--accent);
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+    .feature-list .premium-mark {
+      display: inline-block;
+      flex-shrink: 0;
+      background: var(--accent);
+      color: var(--bg);
+      font-size: 0.65rem;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: 2px 8px;
+      margin-left: auto;
+      align-self: center;
+    }
+    .plan-note {
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-align: center;
+      max-width: 480px;
+      margin: 0 auto 40px;
+    }
+  </style>
 </head>
 <body>
   <main>
@@ -23,6 +78,27 @@
         <a href="./release-notes.html">リリースノート</a>
       </div>
     </div>
+
+    <section class="features">
+      <h2>できること</h2>
+      <ul class="feature-list">
+        <li><span class="mark">✓</span>スタミナの満タン時刻を自動計算(上限・回復間隔・1周の消費量を登録するだけ。1つのゲームに複数のスタミナを登録可能)</li>
+        <li><span class="mark">✓</span>デイリー/週間/月間のリセット時刻をゲームごとに管理(週間は曜日、月間は日にちを指定)</li>
+        <li><span class="mark">✓</span>イベントの開始・終了やログインボーナスの期限などを「フリー項目」として1ゲームにつき10件まで登録(毎日・毎週・毎月の繰り返しにも対応)</li>
+        <li><span class="mark">✓</span>スタミナ満タン・各リセット・フリー項目それぞれに、何分前に知らせるかを設定できる通知機能(通知してほしくない時間帯も指定可能)</li>
+        <li><span class="mark">✓</span>登録したすべての予定を近い順に一覧できるタイムライン</li>
+        <li><span class="mark">✓</span>世界の有名タイトル50件ぶんの初期値を用意したゲームテンプレート(選ぶだけで反映、後から自由に変更可能)</li>
+        <li><span class="mark">✓</span>ホーム画面ウィジェットで次の予定をひと目で確認<span class="premium-mark">PREMIUM</span></li>
+        <li><span class="mark">✓</span>ライト/ダークテーマ・9種類のフォントから好みの見た目を選択</li>
+        <li><span class="mark">✓</span>周回数の統計、パスワード付きのバックアップと復元</li>
+        <li><span class="mark">✓</span>日本語を含む12言語に対応、端末の言語設定に自動で合わせて表示</li>
+      </ul>
+    </section>
+
+    <p class="plan-note">
+      無料版でもゲーム・スタミナの登録数に制限なく、タイムライン・通知・バックアップと復元など基本機能をすべてご利用いただけます。<br>
+      PREMIUMでは広告が非表示になり、ホーム画面ウィジェットが使えるようになります。
+    </p>
 
     <footer>
       &copy; <span id="year"></span> ちゃ開発組
