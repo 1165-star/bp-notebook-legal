@@ -163,3 +163,54 @@ footer {
   text-decoration: none;
   font-size: 0.9rem;
 }
+
+/* プライバシーポリシー・リリースノートなどの文書ページ */
+body.doc main {
+  max-width: 760px;
+}
+body.doc h1 {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+body.doc h2 {
+  font-size: 1.1rem;
+  border-bottom: none;
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+  padding-bottom: 0;
+  margin-top: 2.2em;
+  margin-bottom: 0.8em;
+}
+body.doc ul {
+  padding-left: 1.4em;
+}
+body.doc li {
+  margin-bottom: 0.5em;
+}
+body.doc a {
+  color: var(--accent);
+}
+body.doc .updated,
+body.doc .date,
+body.doc .empty {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 2em;
+}
+body.doc .version {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+body.doc .lang-divider {
+  margin: 3.5em 0;
+  border: none;
+  border-top: 2px solid var(--border);
+}
+body.doc .contact {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-top: 1em;
+}
