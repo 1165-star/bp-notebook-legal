@@ -8,6 +8,42 @@
   <link rel="icon" href="../favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="stylesheet" href="../assets/site.css">
+  <style>
+    /* 共通のsite.cssは他アプリと共有のため変更せず、このページ専用のスタイルはここに閉じる */
+    .features {
+      text-align: left;
+      max-width: 480px;
+      margin: 0 auto 32px;
+    }
+    .features h2 {
+      font-size: 1rem;
+      text-align: center;
+      border-bottom: none;
+    }
+    .feature-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+    .feature-list .mark {
+      color: var(--accent);
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+  </style>
 </head>
 <body>
   <main>
@@ -17,11 +53,24 @@
       <img class="icon" src="../assets/icons/monosashi.png" alt="モノサシのアイコン">
       <h1>モノサシ</h1>
       <p class="desc">写真をスワイプするだけ。断捨離の必要・不要を、モノサシがゆっくり判定します。</p>
-      <span class="badge">準備中</span>
-      <div class="app-links">
-        <a href="./privacy-policy.html">プライバシーポリシー</a>
-        <a href="./release-notes.html">リリースノート</a>
-      </div>
+    </div>
+
+    <section class="features">
+      <h2>できること</h2>
+      <ul class="feature-list">
+        <li><span class="mark">✓</span>手放すか迷っているものを撮影して記録、あとで上下左右にスワイプするだけの簡単操作</li>
+        <li><span class="mark">✓</span>判定はいつでもやり直せる。何度も測るほど「必要」「不要」がだんだんはっきりしてくる</li>
+        <li><span class="mark">✓</span>結果画面で確信度別に「必要」「不要」を一覧表示、処分候補もすぐに確認できる</li>
+        <li><span class="mark">✓</span>ホーム画面ウィジェットで未判定件数や処分候補をひと目で確認</li>
+        <li><span class="mark">✓</span>カラーテーマ9種類×フォント9種類から好みの見た目を選択</li>
+        <li><span class="mark">✓</span>パスワード付きのバックアップと復元(Android)</li>
+        <li><span class="mark">✓</span>日本語を含む12言語に対応、端末の言語設定に自動で合わせて表示</li>
+      </ul>
+    </section>
+
+    <div class="app-links">
+      <a href="./privacy-policy.html">プライバシーポリシー</a>
+      <a href="./release-notes.html">リリースノート</a>
     </div>
 
     <footer>
