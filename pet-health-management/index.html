@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ぺっときろく - ちゃ開発組</title>
+  <meta name="description" content="体重・うんち・ごはん・写真などの記録とグラフ表示、リマインダー通知で複数のペットの健康をまとめて管理できます。">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main>
+    <a class="back-link" href="../">&larr; ちゃ開発組トップ</a>
+
+    <div class="app-hero">
+      <img class="icon" src="../assets/icons/pet-health-management.png" alt="ぺっときろくのアイコン">
+      <h1>ぺっときろく</h1>
+      <p class="desc">体重・うんち・ごはん・写真などの記録とグラフ表示、リマインダー通知で複数のペットの健康をまとめて管理できます。</p>
+      <span class="badge">準備中</span>
+      <div class="app-links">
+        <a href="./privacy-policy.html">プライバシーポリシー</a>
+        <a href="./release-notes.html">リリースノート</a>
+      </div>
+    </div>
+
+    <footer>
+      &copy; <span id="year"></span> ちゃ開発組
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

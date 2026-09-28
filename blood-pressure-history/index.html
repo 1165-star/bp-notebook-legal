@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>血圧メモ - ちゃ開発組</title>
+  <meta name="description" content="血圧と脈拍をサクッと記録。グラフやリマインダーで毎日の血圧管理をサポートします。">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main>
+    <a class="back-link" href="../">&larr; ちゃ開発組トップ</a>
+
+    <div class="app-hero">
+      <img class="icon" src="../assets/icons/blood-pressure-history.png" alt="血圧メモのアイコン">
+      <h1>血圧メモ</h1>
+      <p class="desc">血圧と脈拍をサクッと記録。グラフやリマインダーで毎日の血圧管理をサポートします。</p>
+      <span class="badge">準備中</span>
+      <div class="app-links">
+        <a href="./privacy-policy.html">プライバシーポリシー</a>
+        <a href="./release-notes.html">リリースノート</a>
+      </div>
+    </div>
+
+    <footer>
+      &copy; <span id="year"></span> ちゃ開発組
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

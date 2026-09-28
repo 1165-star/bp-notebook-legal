@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スタミナ手帳 - ちゃ開発組</title>
+  <meta name="description" content="スマホゲームのスタミナ・リセット時刻、イベント等の開始と終了をまとめて管理できる手帳アプリ。">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <main>
+    <a class="back-link" href="../">&larr; ちゃ開発組トップ</a>
+
+    <div class="app-hero">
+      <img class="icon" src="../assets/icons/sutamina-techo.png" alt="スタミナ手帳のアイコン">
+      <h1>スタミナ手帳</h1>
+      <p class="desc">スマホゲームのスタミナ・リセット時刻、イベント等の開始と終了をまとめて管理できる手帳アプリ。</p>
+      <span class="badge">準備中</span>
+      <div class="app-links">
+        <a href="./privacy-policy.html">プライバシーポリシー</a>
+        <a href="./release-notes.html">リリースノート</a>
+      </div>
+    </div>
+
+    <footer>
+      &copy; <span id="year"></span> ちゃ開発組
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
