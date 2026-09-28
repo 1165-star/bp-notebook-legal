@@ -8,6 +8,61 @@
   <link rel="icon" href="../favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="stylesheet" href="../assets/site.css">
+  <style>
+    /* 共通のsite.cssは他アプリと共有のため変更せず、このページ専用のスタイルはここに閉じる */
+    .features {
+      text-align: left;
+      max-width: 480px;
+      margin: 0 auto 32px;
+    }
+    .features h2 {
+      font-size: 1rem;
+      text-align: center;
+      border-bottom: none;
+    }
+    .feature-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+    .feature-list .mark {
+      color: var(--accent);
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+    .feature-list .premium-mark {
+      display: inline-block;
+      flex-shrink: 0;
+      background: var(--accent);
+      color: var(--bg);
+      font-size: 0.65rem;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: 2px 8px;
+      margin-left: auto;
+      align-self: center;
+    }
+    .plan-note {
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-align: center;
+      max-width: 480px;
+      margin: 0 auto 40px;
+    }
+  </style>
 </head>
 <body>
   <main>
@@ -23,6 +78,26 @@
         <a href="./release-notes.html">リリースノート</a>
       </div>
     </div>
+
+    <section class="features">
+      <h2>できること</h2>
+      <ul class="feature-list">
+        <li><span class="mark">✓</span>恵方(毎年自動計算)・キブラ・真北・伊勢神宮・出雲大社・明治神宮・伏見稲荷大社・太宰府天満宮・厳島神社・富士山山頂など、あらかじめ用意された目的地への方角と距離がすぐわかる</li>
+        <li><span class="mark">✓</span>実家・推しの聖地・ライブ会場など好きな場所を住所検索(2文字入力で候補表示)ですぐ登録、複数タグで整理</li>
+        <li><span class="mark">✓</span>登録した場所ごとに「一回だけ/毎日/毎週/毎年」の通知を予約(1つの場所に複数スケジュールも可能)。通知タップでその場所を選択した状態でアプリが開く</li>
+        <li><span class="mark">✓</span>コンパスの針を4種類のかわいい指さしハンドイラスト、または自分で選んだ写真に変更(ピンチ・ドラッグ・回転で位置調整)。場所ごとに違う針を設定可能</li>
+        <li><span class="mark">✓</span>よく使う場所をお気に入り登録していつでもすぐアクセス、起動時に表示する場所も指定できる</li>
+        <li><span class="mark">✓</span>9種類のカラーテーマ(明るい系4種+暗い系4種+標準)と、9種類のフォント(きれい系/強め系/かわいい系の3カテゴリ×3書体)で見た目を自分好みに</li>
+        <li><span class="mark">✓</span>日本語・英語・簡体字中国語・繁体字中国語・韓国語・スペイン語・ポルトガル語・フランス語・ドイツ語・ロシア語・インドネシア語・イタリア語の12言語に対応、端末の言語設定に自動で追従</li>
+        <li><span class="mark">✓</span>登録した場所やコンパス針の画像を含め、パスワード付き暗号化バックアップとして書き出し・復元。機種変更時も安心</li>
+        <li><span class="mark">✓</span>登録できる場所の上限アップ・広告非表示<span class="premium-mark">PREMIUM</span></li>
+      </ul>
+    </section>
+
+    <p class="plan-note">
+      無料版でも一定数までの場所を登録でき、通知・お気に入り・バックアップなど主要機能は制限なくご利用いただけます。<br>
+      PREMIUMにアップグレードすると、登録できる場所の上限が引き上がり、広告も非表示になります。
+    </p>
 
     <footer>
       &copy; <span id="year"></span> ちゃ開発組
