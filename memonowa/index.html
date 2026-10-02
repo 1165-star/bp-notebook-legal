@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>めものわ - ちゃ開発組</title>
+  <meta name="description" content="描く。書く。つながる。ひとりでも、みんなでも使える手書きキャンバス。">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <style>
+    /* 共通のsite.cssは他アプリと共有のため変更せず、このページ専用のスタイルはここに閉じる */
+    .features {
+      text-align: left;
+      max-width: 480px;
+      margin: 0 auto 32px;
+    }
+    .features h2 {
+      font-size: 1rem;
+      text-align: center;
+      border-bottom: none;
+    }
+    .feature-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+    .feature-list .mark {
+      color: var(--accent);
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back-link" href="../">&larr; ちゃ開発組トップ</a>
+
+    <div class="app-hero">
+      <img class="icon" src="./icon.png" alt="めものわのアイコン">
+      <h1>めものわ</h1>
+      <p class="desc">描く。書く。つながる。ひとりでも、みんなでも使える手書きキャンバス。</p>
+    </div>
+
+    <section class="features">
+      <h2>できること</h2>
+      <ul class="feature-list">
+        <li><span class="mark">✓</span>ひとりなら、ちょっとしたメモ帳に。指でさっと書いたり描いたり</li>
+        <li><span class="mark">✓</span>家族や友達と、同じキャンバスに。同じWi-Fiにいる近くの人と、QRコードと4桁のパスワードでつながって一緒に書き込める</li>
+        <li><span class="mark">✓</span>子どもの字の練習やお絵描き、塗り絵にも。消しゴムでやり直しもできる</li>
+        <li><span class="mark">✓</span>背景は、無地・方眼紙・好きな画像から選べて、画像は位置と大きさを調整できる</li>
+        <li><span class="mark">✓</span>直線モード・半透明のペン・指2本での拡大縮小</li>
+        <li><span class="mark">✓</span>描いた絵は、ワンタップで端末の写真に保存</li>
+        <li><span class="mark">✓</span>カラーテーマ・フォントを選べて、日本語を含む12言語に対応</li>
+      </ul>
+    </section>
+
+    <div class="app-links">
+      <a href="./privacy-policy.html">プライバシーポリシー</a>
+      <a href="./release-notes.html">リリースノート</a>
+    </div>
+
+    <footer>
+      &copy; <span id="year"></span> ちゃ開発組
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
